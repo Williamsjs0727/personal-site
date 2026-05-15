@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Domie logo</title>
+  <desc id="desc">Domie wordmark with a white dome line on a navy background.</desc>
+  <rect width="1200" height="800" fill="#1d2064"/>
+  <g fill="none" stroke="#f6f4ff" stroke-linecap="round">
+    <path d="M178 485c40-140 167-260 336-326" stroke-width="16" opacity=".52"/>
+    <path d="M354 411c238-26 505-15 642 48" stroke-width="13"/>
+    <path d="M637 213c194 12 329 104 405 276" stroke-width="17" opacity=".82"/>
+    <path d="M181 485c157 42 662 46 819-25" stroke-width="19"/>
+  </g>
+  <text x="600" y="570" fill="#f7f6ff" font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif" font-size="86" font-weight="400" letter-spacing="52" text-anchor="middle">domie</text>
+</svg>
