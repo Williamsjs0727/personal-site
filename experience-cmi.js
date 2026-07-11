@@ -20,6 +20,7 @@ const copy = {
       language: "Language",
       rotationTimeline: "CMI rotation timeline",
       learningFlow: "CMI rotation learning flow",
+      logicStack: "CMI rotation logic stack",
     },
     nav: ["Overview", "Rotations", "Integration", "Logic"],
     links: {
@@ -110,6 +111,12 @@ const copy = {
       heading: "A rotation logic across product operations and enterprise business.",
       summary:
         "From international Jego Trip UX to communications SMS products, MVNO iteration, and enterprise operations, the rotation connects user experience, product mechanisms, and business coordination into one working chain.",
+      logic: [
+        { title: "User-facing product", body: "International Jego Trip UX" },
+        { title: "Telecom product logic", body: "Communications SMS products" },
+        { title: "Product iteration", body: "Malaysia MVNO SIM card" },
+        { title: "Business operations", body: "Enterprise collaboration" },
+      ],
       links: ["Visit CMI website", "Back to experience timeline", "Contact William"],
     },
     footer: {
@@ -131,6 +138,7 @@ const copy = {
       language: "语言",
       rotationTimeline: "CMI 轮岗时间轴",
       learningFlow: "CMI 轮岗学习路径",
+      logicStack: "CMI 轮岗逻辑",
     },
     nav: ["概览", "轮岗", "串联", "逻辑"],
     links: {
@@ -216,6 +224,12 @@ const copy = {
       heading: "一段跨产品运营与企业业务的轮岗逻辑。",
       summary:
         "从国际版无忧行的用户体验优化，到通讯类短信产品、MVNO 产品迭代与企业业务运营，这段轮岗把用户体验、产品机制与业务协同放在同一条工作链路中理解。",
+      logic: [
+        { title: "用户侧产品", body: "国际版无忧行体验优化" },
+        { title: "通讯类产品逻辑", body: "短信产品与平台流程" },
+        { title: "产品功能迭代", body: "马来西亚 MVNO 电话卡" },
+        { title: "企业业务运营", body: "业务政策与跨团队协同" },
+      ],
       links: ["访问 CMI 官网", "返回经历时间轴", "联系 William"],
     },
     footer: {
@@ -316,22 +330,21 @@ document.querySelectorAll(".reveal").forEach((element) => {
   revealObserver.observe(element);
 });
 
-const navObserver = new IntersectionObserver(
-  (entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+const updateActiveNav = () => {
+  const offset = window.innerHeight * 0.35;
+  const current = sections.reduce((active, section) => {
+    const top = section.getBoundingClientRect().top;
+    return top <= offset ? section : active;
+  }, sections[0]);
 
-    if (!visible) return;
+  navLinks.forEach((link) => {
+    link.classList.toggle(
+      "is-active",
+      Boolean(current) && link.getAttribute("href") === `#${current.id}`
+    );
+  });
+};
 
-    navLinks.forEach((link) => {
-      link.classList.toggle(
-        "is-active",
-        link.getAttribute("href") === `#${visible.target.id}`
-      );
-    });
-  },
-  { rootMargin: "-20% 0px -60% 0px", threshold: [0.08, 0.2, 0.4] }
-);
-
-sections.forEach((section) => navObserver.observe(section));
+updateActiveNav();
+window.addEventListener("scroll", updateActiveNav, { passive: true });
+window.addEventListener("resize", updateActiveNav);

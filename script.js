@@ -166,6 +166,12 @@ const copy = {
       kicker: "Professional Experiences",
       heading:
         "Product sense shaped through telecom, brand, marketplace, mobility, and early venture work.",
+      lensLabel: "Experience composition",
+      lens: [
+        { title: "Full-time", body: "CMI graduate trainee rotation" },
+        { title: "Internships", body: "Brand, product operations, mobility" },
+        { title: "Venture", body: "High school entrepreneurship" },
+      ],
       items: [
         { year: "2025", date: "Aug - Present", company: "China Mobile International", role: "Graduate Trainee · Full-time job", link: "View rotation details" },
         { year: "2024", date: "Jun - Aug", company: "Authentic Brands Group", role: "Brand Management Intern (APAC Team) · Internship", link: "Company profile" },
@@ -334,6 +340,12 @@ const copy = {
     experience: {
       kicker: "工作经历",
       heading: "产品判断力在电信、品牌、平台、出行与早期创业中持续形成。",
+      lensLabel: "经历构成",
+      lens: [
+        { title: "全职", body: "中国移动国际管培生轮岗" },
+        { title: "实习", body: "品牌、产品运营与出行平台" },
+        { title: "创业", body: "高中阶段创业经历" },
+      ],
       items: [
         { year: "2025", date: "8月 - 至今", company: "中国移动国际", role: "管培生 · 全职工作", link: "查看轮岗详情" },
         { year: "2024", date: "6月 - 8月", company: "Authentic Brands Group", role: "品牌管理实习生（亚太团队）· 实习", link: "公司简介" },
@@ -496,6 +508,13 @@ const applyLanguage = (language) => {
 
   setText(".experience-section .section-kicker", content.experience.kicker);
   setText(".experience-section .section-heading h2", content.experience.heading);
+  document.querySelector(".experience-lens")?.setAttribute("aria-label", content.experience.lensLabel);
+  document.querySelectorAll(".experience-lens article").forEach((item, index) => {
+    const lens = content.experience.lens[index];
+    if (!lens) return;
+    item.querySelector("strong").textContent = lens.title;
+    item.querySelector("small").textContent = lens.body;
+  });
   document.querySelectorAll(".timeline-item").forEach((item, index) => {
     const experience = content.experience.items[index];
     if (!experience) return;
@@ -634,22 +653,21 @@ document.querySelectorAll(".reveal").forEach((element) => {
   revealObserver.observe(element);
 });
 
-const navObserver = new IntersectionObserver(
-  (entries) => {
-    const visible = entries
-      .filter((entry) => entry.isIntersecting)
-      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+const updateActiveNav = () => {
+  const offset = window.innerHeight * 0.35;
+  const current = sections.reduce((active, section) => {
+    const top = section.getBoundingClientRect().top;
+    return top <= offset ? section : active;
+  }, sections[0]);
 
-    if (!visible) return;
+  navLinks.forEach((link) => {
+    link.classList.toggle(
+      "is-active",
+      Boolean(current) && link.getAttribute("href") === `#${current.id}`
+    );
+  });
+};
 
-    navLinks.forEach((link) => {
-      link.classList.toggle(
-        "is-active",
-        link.getAttribute("href") === `#${visible.target.id}`
-      );
-    });
-  },
-  { rootMargin: "-20% 0px -60% 0px", threshold: [0.08, 0.2, 0.4] }
-);
-
-sections.forEach((section) => navObserver.observe(section));
+updateActiveNav();
+window.addEventListener("scroll", updateActiveNav, { passive: true });
+window.addEventListener("resize", updateActiveNav);
