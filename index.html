@@ -8,20 +8,57 @@
     <meta property="og:title" content="Jingshan William Shi">
     <meta property="og:description" content="Product, brand, operations, design, analytics, and photography portfolio.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/portrait-luxury-bg.png">
+    <meta property="og:site_name" content="Jingshan William Shi">
+    <meta property="og:image" content="assets/og-home.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Jingshan William Shi portfolio portrait">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jingshan William Shi">
+    <meta name="twitter:description" content="Product, brand, operations, design, analytics, and photography portfolio.">
+    <meta name="twitter:image" content="assets/og-home.webp">
     <meta name="color-scheme" content="light dark">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f4ed">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12100d">
     <link rel="icon" href="data:,">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="immersive.css?v=20261003-editorial">
+    <link rel="stylesheet" href="editorial.css?v=20261003-editorial">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jingshan Shi",
+        "alternateName": "William Shi",
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Columbia University" },
+          { "@type": "CollegeOrUniversity", "name": "University College London" }
+        ],
+        "worksFor": { "@type": "Organization", "name": "China Mobile International" },
+        "sameAs": [
+          "https://www.linkedin.com/in/jingshan-shi/",
+          "https://www.instagram.com/s_jingshan/"
+        ]
+      }
+    </script>
   </head>
   <body>
+    <a class="skip-link" href="#introduction" data-story-copy-en="Skip to content" data-story-copy-zh="跳至正文">Skip to content</a>
     <header class="site-header" data-header>
       <a class="wordmark" href="#top" aria-label="Jingshan William Shi home">
         <span>Jingshan</span>
         <span>William Shi</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
+      <button
+        class="nav-toggle"
+        data-nav-toggle
+        type="button"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+      >
+        <span data-nav-toggle-label>Menu</span>
+      </button>
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
         <a href="#introduction">Introduction</a>
         <a href="#education">Education</a>
         <a href="#experience">Experience</a>
@@ -41,29 +78,77 @@
       </div>
     </header>
 
+    <p class="mobile-chapter" data-mobile-chapter aria-live="polite" aria-atomic="true">01 / Arrival</p>
+
+    <nav class="story-rail" data-story-rail aria-label="Portfolio story chapters">
+      <span class="story-rail-track" aria-hidden="true"><span data-story-progress></span></span>
+      <a data-story-link href="#introduction" data-story-target="observe" aria-current="true"><span>01</span><strong data-story-title-en="Observe" data-story-title-zh="观察">Observe</strong></a>
+      <a data-story-link href="#education" data-story-target="learn"><span>02</span><strong data-story-title-en="Learn" data-story-title-zh="求知">Learn</strong></a>
+      <a data-story-link href="#experience" data-story-target="operate"><span>03</span><strong data-story-title-en="Operate" data-story-title-zh="实践">Operate</strong></a>
+      <a data-story-link href="#projects" data-story-target="shape"><span>04</span><strong data-story-title-en="Shape" data-story-title-zh="塑造">Shape</strong></a>
+      <a data-story-link href="#ucl" data-story-target="communicate"><span>05</span><strong data-story-title-en="Communicate" data-story-title-zh="表达">Communicate</strong></a>
+      <a data-story-link href="#photography" data-story-target="frame"><span>06</span><strong data-story-title-en="Frame" data-story-title-zh="取景">Frame</strong></a>
+      <a data-story-link href="#contact" data-story-target="connect"><span>07</span><strong data-story-title-en="Connect" data-story-title-zh="连接">Connect</strong></a>
+    </nav>
+
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
+      <div class="immersive-stage" data-immersive-stage>
+      <section class="hero cinematic-scene cinematic-scene--arrival" data-cinematic-scene data-cinematic-key="arrival" data-cinematic-label-en="Arrival" data-cinematic-label-zh="抵达" data-depth-stage aria-labelledby="hero-title">
+        <picture class="hero-backdrop" data-depth-layer data-cinematic-layer="media" aria-hidden="true">
+          <source media="(prefers-color-scheme: light)" srcset="assets/hero-immersive-light.webp">
+          <img src="assets/hero-immersive-dark.webp" width="1536" height="1024" alt="" fetchpriority="high" decoding="async">
+        </picture>
+        <div class="hero-copy reveal" data-cinematic-layer="foreground">
+          <p class="edition-label"><span class="edition-dot" aria-hidden="true"></span><span data-story-copy-en="A personal portfolio" data-story-copy-zh="个人作品与实践">A personal portfolio</span><span class="edition-index" aria-hidden="true">01 — 07</span></p>
           <p class="eyebrow">Product Management / Operations / Brand Strategy</p>
-          <h1 id="hero-title">Jingshan<br><span>"William"</span> Shi</h1>
+          <h1 id="hero-title">Jingshan<br><span>William Shi</span></h1>
           <p class="hero-lede">
             A Columbia MSc graduate and UCL alum building across telecom, product,
             brand, operations, analytics, and international business.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#experience">View experience</a>
-            <a class="button ghost" data-link-key="cv" href="http://drive.google.com/file/d/1mGLtWM1eYTXxHXKDGP8l3LyrxBBRxj_r/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
+            <a class="button ghost" data-link-key="cv" href="https://drive.google.com/file/d/1mGLtWM1eYTXxHXKDGP8l3LyrxBBRxj_r/view?usp=sharing" target="_blank" rel="noreferrer">Download CV</a>
           </div>
         </div>
-        <div class="hero-media reveal" aria-label="Portrait of Jingshan William Shi">
-          <img src="assets/portrait-luxury-bg.png" alt="Jingshan William Shi professional portrait">
+        <div class="portrait-caption" aria-hidden="true"><span>J. W. Shi</span><span data-story-copy-en="Product mind. Creative eye." data-story-copy-zh="产品思维，创作视角。">Product mind. Creative eye.</span></div>
+        <div class="hero-index" aria-label="Explore the portfolio" data-spatial-label-en="Explore the portfolio" data-spatial-label-zh="探索作品集">
+          <a class="hero-index-intro" href="#introduction"><span data-story-copy-en="A little curiosity goes a long way." data-story-copy-zh="让好奇心，走得更远。">A little curiosity goes a long way.</span><span class="index-arrow" aria-hidden="true">↓</span></a>
+          <a href="#projects"><span class="index-number">01</span><span><strong data-story-copy-en="Selected work" data-story-copy-zh="精选项目">Selected work</strong><small data-story-copy-en="Product, design & analytics" data-story-copy-zh="产品、设计与分析">Product, design & analytics</small></span><span class="index-arrow" aria-hidden="true">↗</span></a>
+          <a class="hero-index-photo" href="#photography"><img src="assets/photo-05.webp" width="2400" height="1600" alt="" decoding="async"><span><strong data-story-copy-en="Through my lens" data-story-copy-zh="我的镜头">Through my lens</strong><small data-story-copy-en="18 frames, a different perspective" data-story-copy-zh="18 个画面，另一种视角">18 frames, a different perspective</small></span><span class="index-arrow" aria-hidden="true">↗</span></a>
         </div>
-        <p class="hero-note">Finding a product manager? Scroll for a focused portfolio.</p>
+        <p class="hero-note" data-cinematic-layer="handoff">Finding a product manager? Scroll for a focused portfolio.</p>
       </section>
 
-      <section class="intro section" id="introduction">
+      <section class="photo-prologue" aria-label="Photography prologue">
+        <figure class="photo-prologue-frame spatial-scene cinematic-scene cinematic-scene--observation" data-cinematic-scene data-cinematic-key="observation" data-cinematic-label-en="Observation" data-cinematic-label-zh="观察" data-prologue-stage data-spatial-scene="observation">
+          <figcaption>
+            <span>01 — Selected Photography</span>
+            <span>Oceanside · California</span>
+          </figcaption>
+          <div class="photo-prologue-plane" data-cinematic-layer="media">
+            <img
+              data-prologue-image
+              src="assets/photo-11.webp"
+              width="2400"
+              height="1351"
+              alt="Oceanside stage and illuminated pier after dark"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <p class="photo-prologue-bridge" data-cinematic-layer="handoff">From observation to systems — one visual language across photographs, products, and operations.</p>
+          <span class="cinematic-seam cinematic-seam--observation-formation"
+                data-cinematic-seam="observation-formation"
+                aria-hidden="true"></span>
+        </figure>
+      </section>
+
+      <div class="cinematic-chapter cinematic-chapter--formation" data-cinematic-scene data-cinematic-key="formation" data-cinematic-label-en="Formation" data-cinematic-label-zh="求知">
+      <section class="intro section story-section" id="introduction" data-story-section="observe">
         <div class="section-kicker">Introduction</div>
-        <div class="intro-grid">
+        <p class="story-bridge" data-story-copy-en="Observation is where every system begins." data-story-copy-zh="每一个系统，都始于观察。">Observation is where every system begins.</p>
+        <div class="intro-grid" data-cinematic-layer="foreground">
           <div>
             <h2>Stay hungry, stay foolish.</h2>
             <p class="quote-credit">Steve Jobs</p>
@@ -85,7 +170,7 @@
             </p>
           </div>
         </div>
-        <div class="highlights" aria-label="Key highlights">
+        <div class="highlights" data-cinematic-layer="foreground" aria-label="Key highlights">
           <article class="highlight reveal">
             <span>01</span>
             <h3>Versatility</h3>
@@ -109,12 +194,15 @@
         </div>
       </section>
 
-      <section class="section education-section" id="education">
+      <section class="section education-section story-section" id="education" data-story-section="learn">
         <div class="section-heading">
           <div class="section-kicker">Education</div>
-          <h2>Academic training across London and New York.</h2>
+          <div class="story-heading-copy">
+            <h2>Academic training across London and New York.</h2>
+            <p class="story-bridge" data-story-copy-en="Two cities taught me to frame better questions." data-story-copy-zh="两座城市，让我学会提出更好的问题。">Two cities taught me to frame better questions.</p>
+          </div>
         </div>
-        <div class="education-grid">
+        <div class="education-grid" data-cinematic-layer="foreground">
           <article class="education-item reveal">
             <time datetime="2023-08">2023<span>Aug 2023 - Feb 2025</span></time>
             <div>
@@ -133,31 +221,36 @@
           </article>
         </div>
       </section>
+      </div>
+      </div>
 
-      <section class="section experience-section" id="experience">
+      <section class="section experience-section story-section cinematic-scene cinematic-scene--practice" id="experience" data-story-section="operate" data-cinematic-scene data-cinematic-key="practice" data-cinematic-label-en="Practice" data-cinematic-label-zh="实践">
         <div class="section-heading">
           <div class="section-kicker">Professional Experiences</div>
-          <h2>Product sense shaped through telecom, brand, marketplace, mobility, and early venture work.</h2>
+          <div class="story-heading-copy">
+            <h2>Product sense shaped through telecom, brand, marketplace, mobility, and early venture work.</h2>
+            <p class="story-bridge" data-story-copy-en="The questions became operating decisions." data-story-copy-zh="问题，逐渐变成真实的运营决策。">The questions became operating decisions.</p>
+          </div>
         </div>
         <div class="experience-lens reveal" aria-label="Experience composition">
           <article>
-            <span>01</span>
-            <strong>Full-time</strong>
-            <small>CMI graduate trainee rotation</small>
+            <span>20%</span>
+            <strong>User engagement</strong>
+            <small>Poppy · product operations</small>
           </article>
           <article>
-            <span>02</span>
-            <strong>Internships</strong>
-            <small>Brand, product operations, mobility</small>
+            <span>6M+</span>
+            <strong>User experiences</strong>
+            <small>DiDi · mobility product</small>
           </article>
           <article>
-            <span>03</span>
-            <strong>Venture</strong>
-            <small>High school entrepreneurship</small>
+            <span>GSD · MVNO</span>
+            <strong>Telecom scope</strong>
+            <small>CMI · global business exposure</small>
           </article>
         </div>
-        <div class="timeline">
-          <article class="timeline-item reveal">
+        <div class="timeline" data-cinematic-layer="foreground">
+          <article class="timeline-item reveal" data-cinematic-experience-item data-experience-index="0">
             <time datetime="2025-08">2025<span>Aug - Present</span></time>
             <div>
               <h3>China Mobile International</h3>
@@ -165,7 +258,7 @@
               <a href="experience-cmi.html">View rotation details</a>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-cinematic-experience-item data-experience-index="1">
             <time datetime="2024-06">2024<span>Jun - Aug</span></time>
             <div>
               <h3>Authentic Brands Group</h3>
@@ -173,7 +266,7 @@
               <a href="https://corporate.authentic.com/" target="_blank" rel="noreferrer">Company profile</a>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-cinematic-experience-item data-experience-index="2">
             <time datetime="2022-07">2022<span>Jul - Oct</span></time>
             <div>
               <h3>Poppy</h3>
@@ -181,15 +274,15 @@
               <a href="https://www.linkedin.com/company/poppymobileshopping/people/" target="_blank" rel="noreferrer">Company profile</a>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-cinematic-experience-item data-experience-index="3">
             <time datetime="2021-05">2021<span>May - Nov</span></time>
             <div>
               <h3>DiDi</h3>
               <p>Product Manager Intern (Discount Express Team) · Internship</p>
-              <a href="http://web.didiglobal.com/" target="_blank" rel="noreferrer">Company profile</a>
+              <a href="https://www.didiglobal.com/" target="_blank" rel="noreferrer">Company profile</a>
             </div>
           </article>
-          <article class="timeline-item reveal">
+          <article class="timeline-item reveal" data-cinematic-experience-item data-experience-index="4">
             <time class="range" datetime="2018-05">2018-2020<span>May 2018 - Dec 2020</span></time>
             <div>
               <h3>Intellioice International Education</h3>
@@ -200,137 +293,136 @@
         </div>
       </section>
 
-      <section class="section projects-section" id="projects">
+      <section class="section projects-section story-section cinematic-scene cinematic-scene--making" id="projects" data-story-section="shape" data-cinematic-scene data-cinematic-key="making" data-cinematic-label-en="Making" data-cinematic-label-zh="塑造">
         <div class="section-heading">
           <div class="section-kicker">Projects</div>
-          <h2>Selected work across product, design, and analytics.</h2>
+          <div class="story-heading-copy">
+            <h2>Selected work across product, design, and analytics.</h2>
+            <p class="story-bridge" data-story-copy-en="Decisions become products when structure meets imagination." data-story-copy-zh="当结构遇见想象，决策才真正成为产品。">Decisions become products when structure meets imagination.</p>
+          </div>
         </div>
-
-        <div class="project-group">
-          <div class="group-title">Product Management</div>
-          <div class="project-list">
-            <article class="project reveal">
+        <div class="project-portal-stage" data-project-cinematic-stage>
+        <div class="project-portal spatial-scene" data-project-portal data-cinematic-layer="media" data-spatial-scene="projects" data-spatial-label-en="Project perspectives" data-spatial-label-zh="项目多视角" aria-label="Project perspectives">
+          <div class="project-portal-copy" data-spatial-layer="copy">
+            <span>04 — Three ways of shaping a decision</span>
+            <h3><span data-portal-term-en="Interface." data-portal-term-zh="界面。">Interface.</span><span data-portal-term-en="Space." data-portal-term-zh="空间。">Space.</span><span data-portal-term-en="Evidence." data-portal-term-zh="证据。">Evidence.</span></h3>
+            <p data-story-copy-en="Move across three planes before entering the case studies." data-story-copy-zh="穿过三个视角，再进入完整项目案例。">Move across three planes before entering the case studies.</p>
+          </div>
+          <div class="project-portal-stack" data-spatial-layer="stack">
+            <figure class="project-portal-frame project-portal-frame--interface" data-project-plane-index="0">
+              <img src="assets/lyft-ar.png" width="1522" height="1368" alt="Decision making app interface perspective" loading="lazy" decoding="async">
+              <figcaption data-portal-term-en="Interface" data-portal-term-zh="界面">Interface</figcaption>
+            </figure>
+            <figure class="project-portal-frame project-portal-frame--space" data-project-plane-index="1">
+              <img src="assets/domie-cad.webp" width="1448" height="1080" alt="Domie spatial CAD perspective" loading="lazy" decoding="async">
+              <figcaption data-portal-term-en="Space" data-portal-term-zh="空间">Space</figcaption>
+            </figure>
+            <figure class="project-portal-frame project-portal-frame--evidence" data-project-plane-index="2">
+              <img src="assets/analytics-map.png" width="1466" height="1090" alt="NYC data evidence perspective" loading="lazy" decoding="async">
+              <figcaption data-portal-term-en="Evidence" data-portal-term-zh="证据">Evidence</figcaption>
+            </figure>
+          </div>
+        </div>
+        </div>
+        <div class="project-curation">
+          <div class="group-title">Featured Cases</div>
+          <div class="project-list project-featured-list">
+            <article class="project project-featured reveal" data-project-key="decision-making">
               <div class="project-media">
-                <img src="assets/lyft-ar.png" alt="Decision making app prototype preview">
+                <img src="assets/lyft-ar.png" width="1522" height="1368" alt="Decision making app prototype preview" loading="lazy" decoding="async">
               </div>
               <div class="project-copy">
                 <p class="project-type">App Prototype</p>
                 <h3>Decision Making App Prototype</h3>
-                <p>An inventive app that streamlines decision-making for customized dining and cinematic recommendations.</p>
-                <a data-link-key="decision-prototype" href="https://js.design/f/KM63Du?p=YE90lv-dKO" target="_blank" rel="noreferrer">View prototype</a>
-                <a data-link-key="decision-report" href="https://drive.google.com/file/d/13JvHc2L1JbwjWKGa_m_7OHvv1nM-cMQg/view" target="_blank" rel="noreferrer">View report</a>
+                <p>Led an AI-powered recommendation app during undergraduate study to streamline dining and movie decisions through customized recommendations.</p>
+                <div class="project-links">
+                  <a data-link-key="decision-prototype" href="https://js.design/f/KM63Du?p=YE90lv-dKO" target="_blank" rel="noreferrer">View prototype</a>
+                  <a data-link-key="decision-report" href="https://drive.google.com/file/d/13JvHc2L1JbwjWKGa_m_7OHvv1nM-cMQg/view" target="_blank" rel="noreferrer">View report</a>
+                </div>
               </div>
             </article>
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/domie-process.jpg" alt="Lyft AR pickup prototype preview">
+            <article class="project project-featured project-featured--reverse reveal" data-project-key="domie">
+              <div class="project-media project-media-pair">
+                <img src="assets/domie.avif" width="400" height="400" alt="Domie repurposing NYC rooftops project preview" loading="lazy" decoding="async">
+                <img src="assets/domie-cad.webp" width="1448" height="1080" alt="Domie CAD prototype for extreme weather operation" loading="lazy" decoding="async">
               </div>
               <div class="project-copy">
-                <p class="project-type">AR Product Concept</p>
-                <h3>Lyft AR Pickup Prototype</h3>
-                <p>AR visual cues help passengers and drivers accurately identify each other's location.</p>
-                <a data-link-key="lyft-ad-video" href="http://youtu.be/08Axhp8f7EI" target="_blank" rel="noreferrer">View advertising video</a>
-              </div>
-            </article>
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/journey-map.png" alt="Lyft customer journey map">
-              </div>
-              <div class="project-copy">
-                <p class="project-type">Journey Mapping</p>
-                <h3>Lyft Customer Journey Map</h3>
-                <p>A full user-experience map used to identify improvements across the Lyft journey.</p>
-                <a data-link-key="lyft-journey-map" href="https://www.canva.com/design/DAFvXjdhEIA/bAh9f8T-dHQv7OnIJyS4Yw/edit" target="_blank" rel="noreferrer">View customer journey map</a>
-              </div>
-            </article>
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/jop search.avif" alt="Job-search app prototype preview">
-              </div>
-              <div class="project-copy">
-                <p class="project-type">Marketplace Prototype</p>
-                <h3>Job-Search App Prototype</h3>
-                <p>A job-search platform for UK students to find opportunities at tech and business startups.</p>
-                <a data-link-key="job-search-prototype" href="https://modao.cc/app/Hxh6IPpr7ycgmLNkCPrV5#screen=sl04y25ll64kaxm" target="_blank" rel="noreferrer">View prototype</a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <div class="project-group">
-          <div class="group-title">Design</div>
-          <div class="project-list">
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/domie.avif" alt="Domie repurposing NYC rooftops project preview">
-              </div>
-              <div class="project-copy">
-                <p class="project-type">Spatial Product</p>
+                <p class="project-type">Spatial Product + CAD</p>
                 <h3>Domie: Repurposing NYC Rooftops</h3>
-                <p>Foldable rooftop igloos that adapt to weather on demand and extend rooftop use to all four seasons.</p>
-                <a data-link-key="domie-design-video" href="http://youtu.be/VNLKsv6CtYw" target="_blank" rel="noreferrer">View design video</a>
-                <a data-link-key="domie-concept-file" href="http://drive.google.com/file/d/17MsGqdXW5mxqgbwuuo-goXDBD6uM9VZS/view?usp=sharing" target="_blank" rel="noreferrer">View concept development file</a>
+                <p>A foldable rooftop-igloo system that adapts to weather on demand, extends NYC rooftop use across all four seasons, and includes a CAD prototype for extreme-weather operation.</p>
+                <div class="project-links">
+                  <a data-link-key="domie-design-video" href="https://youtu.be/VNLKsv6CtYw" target="_blank" rel="noreferrer">View design video</a>
+                  <a data-link-key="domie-concept-file" href="https://drive.google.com/file/d/17MsGqdXW5mxqgbwuuo-goXDBD6uM9VZS/view?usp=sharing" target="_blank" rel="noreferrer">View concept file</a>
+                  <a data-link-key="domie-cad-video" href="https://youtu.be/rFOj1OjNtnU" target="_blank" rel="noreferrer">View CAD prototype</a>
+                </div>
               </div>
             </article>
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/bag-concept.png" alt="Bag concept design">
+            <article class="project-artifact" data-project-key="domie-cad" aria-label="Domie CAD artifact integrated into the featured Domie case"></article>
+            <article class="project project-featured analytics reveal" data-project-key="nyc-apartment">
+              <div class="analytics-media">
+                <div class="project-media">
+                  <img src="assets/analytics-map.png" width="1466" height="1090" alt="NYC apartment search map analysis" loading="lazy" decoding="async">
+                </div>
+                <div class="project-media">
+                  <img src="assets/analytics-timeseries.png" width="1850" height="1090" alt="NYC complaint time series analysis" loading="lazy" decoding="async">
+                </div>
               </div>
               <div class="project-copy">
-                <p class="project-type">Product Design</p>
-                <h3>An Ideal Bag</h3>
-                <p>Customer analysis translated into functional and emotional design requirements for an ideal bag.</p>
-                <a data-link-key="bag-design-slides" href="http://drive.google.com/file/d/1Saa_u7VQsaYw5zP0g3mKeni31NZ5G4_Z/view?usp=sharing" target="_blank" rel="noreferrer">View design slides</a>
-                <a data-link-key="bag-redesign-slides" href="http://drive.google.com/file/d/1LJMdZwtt1IKzxzYCn52uuAWbZQTI84Nr/view?usp=sharing" target="_blank" rel="noreferrer">View re-design slides</a>
-              </div>
-            </article>
-            <article class="project reveal">
-              <div class="project-media">
-                <img src="assets/domie-cad.jpg" alt="Domie CAD prototype">
-              </div>
-              <div class="project-copy">
-                <p class="project-type">CAD Prototype</p>
-                <h3>Domie CAD Prototype</h3>
-                <p>A prototype showing how Domie can operate under extreme weather conditions.</p>
-                <a data-link-key="domie-cad-video" href="http://youtu.be/rFOj1OjNtnU" target="_blank" rel="noreferrer">View prototype video</a>
+                <p class="project-type">Urban Data</p>
+                <h3>NYC Apartment Search</h3>
+                <p>Combined NYC apartment data, 311 complaints, and urban forestry data to support better rental decisions, with project code available on GitHub.</p>
+                <div class="project-links">
+                  <a data-link-key="nyc-github" href="https://github.com/Williamsjs0727/Group1-Final-Project" target="_blank" rel="noreferrer">View project code</a>
+                </div>
               </div>
             </article>
           </div>
         </div>
 
-        <div class="project-group">
-          <div class="group-title">Data Analytics</div>
-          <article class="project analytics reveal">
-            <div class="analytics-media">
-              <div class="project-media">
-                <img src="assets/analytics-map.png" alt="NYC apartment search map analysis">
+        <div class="project-archive">
+          <div class="group-title">Project Archive</div>
+          <div class="project-archive-list">
+            <article class="project-archive-item reveal" data-project-key="lyft-ar">
+              <img src="assets/domie-process.jpg" width="2247" height="1550" alt="Lyft AR pickup prototype preview" loading="lazy" decoding="async">
+              <div><p class="project-type">AR Product Concept</p><h3>Lyft AR Pickup Prototype</h3><p>AR visual cues help passengers and drivers accurately identify each other's location.</p></div>
+              <a data-link-key="lyft-ad-video" href="https://youtu.be/08Axhp8f7EI" target="_blank" rel="noreferrer">View advertising video</a>
+            </article>
+            <article class="project-archive-item reveal" data-project-key="lyft-journey">
+              <img src="assets/journey-map.png" width="6000" height="3375" alt="Lyft customer journey map" loading="lazy" decoding="async">
+              <div><p class="project-type">Journey Mapping</p><h3>Lyft Customer Journey Map</h3><p>A full user-experience map used to identify improvements across the Lyft journey.</p></div>
+              <a data-link-key="lyft-journey-map" href="https://www.canva.com/design/DAFvXjdhEIA/bAh9f8T-dHQv7OnIJyS4Yw/edit" target="_blank" rel="noreferrer">View journey map</a>
+            </article>
+            <article class="project-archive-item reveal" data-project-key="job-search">
+              <img src="assets/jop search.avif" width="200" height="400" alt="Job-search app prototype preview" loading="lazy" decoding="async">
+              <div><p class="project-type">Marketplace Prototype</p><h3>Job-Search App Prototype</h3><p>A job-search platform for UK students to find opportunities at tech and business startups.</p></div>
+              <a data-link-key="job-search-prototype" href="https://modao.cc/app/Hxh6IPpr7ycgmLNkCPrV5#screen=sl04y25ll64kaxm" target="_blank" rel="noreferrer">View prototype</a>
+            </article>
+            <article class="project-archive-item reveal" data-project-key="ideal-bag">
+              <img src="assets/bag-concept.png" width="2048" height="1891" alt="Bag concept design" loading="lazy" decoding="async">
+              <div><p class="project-type">Product Design</p><h3>An Ideal Bag</h3><p>Customer analysis translated into functional and emotional design requirements for an ideal bag.</p></div>
+              <div class="archive-links">
+                <a data-link-key="bag-design-slides" href="https://drive.google.com/file/d/1Saa_u7VQsaYw5zP0g3mKeni31NZ5G4_Z/view?usp=sharing" target="_blank" rel="noreferrer">View design slides</a>
+                <a data-link-key="bag-redesign-slides" href="https://drive.google.com/file/d/1LJMdZwtt1IKzxzYCn52uuAWbZQTI84Nr/view?usp=sharing" target="_blank" rel="noreferrer">View redesign</a>
               </div>
-              <div class="project-media">
-                <img src="assets/analytics-timeseries.png" alt="NYC complaint time series analysis">
-              </div>
-            </div>
-            <div class="project-copy">
-              <p class="project-type">Urban Data</p>
-              <h3>NYC Apartment Search</h3>
-              <p>
-                A data-driven analysis of NYC apartment data, 311 complaints, and urban forestry
-                data to support better apartment rental decisions.
-              </p>
-              <a href="http://github.com/Williamsjs0727/Group1-Final-Project" target="_blank" rel="noreferrer">View project code on GitHub</a>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
+        <span class="cinematic-seam cinematic-seam--making-communication"
+              data-cinematic-seam="making-communication"
+              aria-hidden="true"></span>
       </section>
 
-      <section class="section editorial-split" id="ucl">
-        <div class="split-media">
-          <img src="assets/ucl-canary-wharf.webp" alt="One Canada Square at Canary Wharf, home of UCL School of Management">
+      <section class="section editorial-split spatial-scene reveal story-section cinematic-scene cinematic-scene--communication" id="ucl" data-ucl-chapter data-spatial-scene="ucl" data-story-section="communicate" data-cinematic-scene data-cinematic-key="communication" data-cinematic-label-en="Communication" data-cinematic-label-zh="表达">
+        <div class="split-media" data-spatial-layer="media" data-cinematic-layer="media">
+          <img src="assets/ucl-canary-wharf.webp" width="1800" height="1201" alt="One Canada Square at Canary Wharf, home of UCL School of Management" loading="lazy" decoding="async">
           <a class="media-credit" href="https://commons.wikimedia.org/wiki/File:1_Canada_Square_From_Cabot_Square.jpg" target="_blank" rel="noreferrer">Photo: Mark Gilbert (Judas6000) / CC BY-SA 3.0</a>
         </div>
-        <div class="split-copy reveal">
+        <div class="split-copy" data-spatial-layer="copy" data-cinematic-layer="foreground">
+          <p class="ucl-chapter-mark">05 — UCL / London</p>
           <div class="section-kicker">UCL SOM Official Social Media Project</div>
           <h2>Content, community, and editorial judgment.</h2>
-          <p>
+          <p class="story-bridge" data-story-copy-en="A different medium, the same instinct for framing." data-story-copy-zh="媒介不同，取景与表达的判断相同。">A different medium, the same instinct for framing.</p>
+          <p class="ucl-description">
             A separate creative thread in the portfolio, connected to audience-building,
             content planning, and the discipline of making information feel considered.
           </p>
@@ -338,99 +430,144 @@
         </div>
       </section>
 
-      <section class="section photography-section" id="photography">
-        <div class="section-heading photo-heading">
+      <section class="section photography-section story-section cinematic-scene cinematic-scene--seeing" id="photography" data-story-section="frame" data-cinematic-scene data-cinematic-key="seeing" data-cinematic-label-en="Seeing" data-cinematic-label-zh="观看">
+        <div class="section-heading photo-heading" data-cinematic-layer="foreground">
           <div>
             <div class="section-kicker">Fujifilm Photographer</div>
             <h2>Urban light and coastal silence.</h2>
-            <p>Fujifilm frames of city streets, coastlines, and quiet travel details.</p>
+            <p class="photo-description">Fujifilm frames of city streets, coastlines, and quiet travel details.</p>
+            <p class="story-bridge" data-story-copy-en="Photography returns the story to where it began: attention." data-story-copy-zh="摄影让故事回到起点：专注地看。">Photography returns the story to where it began: attention.</p>
             <div class="photo-meta" aria-label="Photography notes">
               <span>18 selected frames</span>
               <span>Fujifilm / Cities / Travel</span>
             </div>
+            <div class="photo-filters" role="group" aria-label="Filter photographs">
+              <button type="button" data-photo-filter="all" aria-pressed="true">All</button>
+              <button type="button" data-photo-filter="city" aria-pressed="false">Cities</button>
+              <button type="button" data-photo-filter="coast" aria-pressed="false">Coast</button>
+              <button type="button" data-photo-filter="detail" aria-pressed="false">Details</button>
+            </div>
+            <p class="photo-status" data-photo-status aria-live="polite">Showing all 18 photographs</p>
+          </div>
+        </div>
+        <div class="story-ribbon" data-story-ribbon data-ribbon-cinematic-stage data-cinematic-layer="media">
+          <div class="story-ribbon-header">
+            <div>
+              <span data-ribbon-label-en="A moving contact sheet" data-ribbon-label-zh="流动的摄影选片">A moving contact sheet</span>
+              <p data-story-copy-en="Drag the frames horizontally. Open any image to see its full composition." data-story-copy-zh="横向拖动胶片；点击任一照片即可查看完整构图。">Drag the frames horizontally. Open any image to see its full composition.</p>
+            </div>
+            <span class="story-ribbon-drag" data-ribbon-drag-en="Drag ↔" data-ribbon-drag-zh="拖动 ↔" aria-hidden="true">Drag ↔</span>
+          </div>
+          <div class="story-ribbon-track" tabindex="0" aria-label="Selected photography contact sheet">
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="0"><img src="assets/photo-05.webp" width="2400" height="1600" alt="Santa Monica shoreline in soft afternoon light" loading="lazy" decoding="async"><span data-ribbon-caption-en="01 / Coast" data-ribbon-caption-zh="01 / 海岸">01 / Coast</span></button>
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="1"><img src="assets/photo-01.webp" width="1800" height="1351" alt="Quiet storefront and hanging clothes in warm light" loading="lazy" decoding="async"><span data-ribbon-caption-en="02 / Street" data-ribbon-caption-zh="02 / 街巷">02 / Street</span></button>
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="3"><img src="assets/photo-07.webp" width="1351" height="2400" alt="The Vessel at Hudson Yards with a pedestrian in front" loading="lazy" decoding="async"><span data-ribbon-caption-en="03 / Form" data-ribbon-caption-zh="03 / 形态">03 / Form</span></button>
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="7"><img src="assets/photo-11.webp" width="2400" height="1351" alt="Oceanside stage and pier lights after dark" loading="lazy" decoding="async"><span data-ribbon-caption-en="04 / Night" data-ribbon-caption-zh="04 / 夜色">04 / Night</span></button>
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="11"><img src="assets/photo-14.webp" width="2400" height="1351" alt="London Eye and Westminster skyline across the river" loading="lazy" decoding="async"><span data-ribbon-caption-en="05 / London" data-ribbon-caption-zh="05 / 伦敦">05 / London</span></button>
+            <button class="story-ribbon-item" type="button" data-ribbon-photo-index="17"><img src="assets/photo-03.webp" width="1800" height="1200" alt="Night street photograph near public transit" loading="lazy" decoding="async"><span data-ribbon-caption-en="06 / Transit" data-ribbon-caption-zh="06 / 行旅">06 / Transit</span></button>
           </div>
         </div>
         <div class="photo-gallery" aria-label="Photography gallery">
-          <figure class="photo-item photo-panorama reveal">
-            <img src="assets/photo-05.webp" width="2400" height="1600" alt="Santa Monica shoreline in soft afternoon light" loading="lazy" decoding="async">
+          <figure class="photo-item photo-panorama reveal" data-photo-category="coast">
+            <button class="photo-open" type="button" aria-label="Open photograph: Santa Monica shoreline in soft afternoon light"><img src="assets/photo-05.webp" width="2400" height="1600" alt="Santa Monica shoreline in soft afternoon light" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-landscape reveal">
-            <img src="assets/photo-01.webp" width="1800" height="1351" alt="Quiet storefront and hanging clothes in warm light" loading="lazy" decoding="async">
+          <figure class="photo-item photo-landscape reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Quiet storefront and hanging clothes in warm light"><img src="assets/photo-01.webp" width="1800" height="1351" alt="Quiet storefront and hanging clothes in warm light" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-landscape reveal">
-            <img src="assets/photo-02.webp" width="1800" height="954" alt="Street photograph near Tower Bridge in London" loading="lazy" decoding="async">
+          <figure class="photo-item photo-landscape reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Street photograph near Tower Bridge in London"><img src="assets/photo-02.webp" width="1800" height="954" alt="Street photograph near Tower Bridge in London" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-07.webp" width="1351" height="2400" alt="The Vessel at Hudson Yards with a pedestrian in front" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: The Vessel at Hudson Yards with a pedestrian in front"><img src="assets/photo-07.webp" width="1351" height="2400" alt="The Vessel at Hudson Yards with a pedestrian in front" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-08.webp" width="1351" height="2400" alt="Warm fountain detail with water droplets" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="detail">
+            <button class="photo-open" type="button" aria-label="Open photograph: Warm fountain detail with water droplets"><img src="assets/photo-08.webp" width="1351" height="2400" alt="Warm fountain detail with water droplets" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-wide reveal">
-            <img src="assets/photo-04.webp" width="1800" height="1008" alt="Skyline across still water" loading="lazy" decoding="async">
+          <figure class="photo-item photo-wide reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Skyline across still water"><img src="assets/photo-04.webp" width="1800" height="1008" alt="Skyline across still water" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-06.webp" width="1600" height="2400" alt="Sunlit downtown street framed by tall buildings" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Sunlit downtown street framed by tall buildings"><img src="assets/photo-06.webp" width="1600" height="2400" alt="Sunlit downtown street framed by tall buildings" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-wide reveal">
-            <img src="assets/photo-11.webp" width="2400" height="1351" alt="Oceanside stage and pier lights after dark" loading="lazy" decoding="async">
+          <figure class="photo-item photo-wide reveal" data-photo-category="coast">
+            <button class="photo-open" type="button" aria-label="Open photograph: Oceanside stage and pier lights after dark"><img src="assets/photo-11.webp" width="2400" height="1351" alt="Oceanside stage and pier lights after dark" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-wide reveal">
-            <img src="assets/photo-12.webp" width="2400" height="1351" alt="Foggy pier view with a bench and ocean telescope" loading="lazy" decoding="async">
+          <figure class="photo-item photo-wide reveal" data-photo-category="coast">
+            <button class="photo-open" type="button" aria-label="Open photograph: Foggy pier view with a bench and ocean telescope"><img src="assets/photo-12.webp" width="2400" height="1351" alt="Foggy pier view with a bench and ocean telescope" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-13.webp" width="1351" height="2400" alt="Westminster clock tower silhouette at dusk" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Westminster clock tower silhouette at dusk"><img src="assets/photo-13.webp" width="1351" height="2400" alt="Westminster clock tower silhouette at dusk" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-15.webp" width="1350" height="2400" alt="Midtown Manhattan street canyon with pedestrians" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Midtown Manhattan street canyon with pedestrians"><img src="assets/photo-15.webp" width="1350" height="2400" alt="Midtown Manhattan street canyon with pedestrians" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-wide reveal">
-            <img src="assets/photo-14.webp" width="2400" height="1351" alt="London Eye and Westminster skyline across the river" loading="lazy" decoding="async">
+          <figure class="photo-item photo-wide reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: London Eye and Westminster skyline across the river"><img src="assets/photo-14.webp" width="2400" height="1351" alt="London Eye and Westminster skyline across the river" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-09.webp" width="1351" height="2400" alt="Holiday parade float at night" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="detail">
+            <button class="photo-open" type="button" aria-label="Open photograph: Holiday parade float at night"><img src="assets/photo-09.webp" width="1351" height="2400" alt="Holiday parade float at night" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-10.webp" width="1351" height="2400" alt="Coastal pool and palm trees at dusk" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="coast">
+            <button class="photo-open" type="button" aria-label="Open photograph: Coastal pool and palm trees at dusk"><img src="assets/photo-10.webp" width="1351" height="2400" alt="Coastal pool and palm trees at dusk" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-16.webp" width="1350" height="2400" alt="New York brick building in filtered daylight" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: New York brick building in filtered daylight"><img src="assets/photo-16.webp" width="1350" height="2400" alt="New York brick building in filtered daylight" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-landscape reveal">
-            <img src="assets/photo-17.webp" width="2400" height="1600" alt="Green city park edge beside a road" loading="lazy" decoding="async">
+          <figure class="photo-item photo-landscape reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Green city park edge beside a road"><img src="assets/photo-17.webp" width="2400" height="1600" alt="Green city park edge beside a road" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-tall reveal">
-            <img src="assets/photo-18.jpeg" width="2632" height="4676" alt="Fujifilm photograph of the Palace of Westminster and Union Jack in London" loading="lazy" decoding="async">
+          <figure class="photo-item photo-tall reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Palace of Westminster and Union Jack in London"><img src="assets/photo-18.jpeg" width="2632" height="4676" alt="Fujifilm photograph of the Palace of Westminster and Union Jack in London" loading="lazy" decoding="async"></button>
           </figure>
-          <figure class="photo-item photo-landscape reveal">
-            <img src="assets/photo-03.webp" width="1800" height="1200" alt="Night street photograph near public transit" loading="lazy" decoding="async">
+          <figure class="photo-item photo-landscape reveal" data-photo-category="city">
+            <button class="photo-open" type="button" aria-label="Open photograph: Night street photograph near public transit"><img src="assets/photo-03.webp" width="1800" height="1200" alt="Night street photograph near public transit" loading="lazy" decoding="async"></button>
           </figure>
         </div>
       </section>
 
-      <section class="contact section" id="contact">
-        <div class="contact-inner reveal">
+      <section class="contact section story-section cinematic-scene cinematic-scene--ending" id="contact" data-story-section="connect" data-cinematic-scene data-cinematic-key="ending" data-cinematic-label-en="Ending" data-cinematic-label-zh="片尾">
+        <div class="contact-inner reveal" data-cinematic-layer="foreground">
           <div>
             <div class="section-kicker">Get in touch</div>
             <h2>Open to product, brand, and operations conversations.</h2>
+            <p class="story-bridge" data-story-copy-en="The next chapter starts with a conversation." data-story-copy-zh="下一章，从一次对话开始。">The next chapter starts with a conversation.</p>
           </div>
           <div class="contact-links">
-            <a href="mailto:js6363@columbia.edu">js6363@columbia.edu</a>
-            <a href="tel:+85293539872">+852 93539872</a>
-            <a href="tel:+8615919953827">+86 15919953827</a>
-            <a data-contact-key="linkedin" href="https://www.linkedin.com/in/jingshan-shi/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a data-contact-key="instagram" data-link-key="instagram" href="https://www.instagram.com/s_jingshan/" target="_blank" rel="noreferrer">Instagram</a>
-            <button data-contact-key="wechat" data-wechat-open type="button">WeChat</button>
+            <div class="contact-primary">
+              <a href="mailto:js6363@columbia.edu"><span>Email</span><strong>js6363@columbia.edu</strong></a>
+              <a href="https://www.linkedin.com/in/jingshan-shi/" target="_blank" rel="noreferrer"><span data-contact-key="linkedin">LinkedIn</span><strong>Professional profile</strong></a>
+              <button data-wechat-open type="button"><span data-contact-key="wechat">WeChat</span><strong>Scan to connect</strong></button>
+            </div>
+            <details class="contact-secondary">
+              <summary data-contact-secondary-label>More contact details</summary>
+              <div>
+                <a href="tel:+85293539872"><span data-phone-label="hong-kong">Hong Kong</span><strong>+852 93539872</strong></a>
+                <a href="tel:+8615919953827"><span data-phone-label="mainland">Mainland China</span><strong>+86 15919953827</strong></a>
+                <a data-link-key="instagram" href="https://www.instagram.com/s_jingshan/" target="_blank" rel="noreferrer"><span data-contact-key="instagram">Instagram</span><strong>@s_jingshan</strong></a>
+              </div>
+            </details>
           </div>
         </div>
       </section>
     </main>
 
+    <dialog class="photo-lightbox" data-photo-lightbox aria-labelledby="photo-lightbox-caption">
+      <button class="photo-lightbox-close" data-lightbox-close type="button" aria-label="Close photograph">Close</button>
+      <div class="photo-lightbox-stage">
+        <button class="photo-lightbox-nav photo-lightbox-previous" data-lightbox-previous type="button" aria-label="Previous photograph">Previous</button>
+        <figure>
+          <img data-lightbox-image src="assets/photo-05.webp" width="2400" height="1600" loading="lazy" decoding="async" alt="">
+          <figcaption id="photo-lightbox-caption"><span data-lightbox-caption></span><span data-lightbox-counter></span></figcaption>
+        </figure>
+        <button class="photo-lightbox-nav photo-lightbox-next" data-lightbox-next type="button" aria-label="Next photograph">Next</button>
+      </div>
+    </dialog>
+
     <div class="wechat-modal" data-wechat-modal hidden>
       <div class="wechat-backdrop" data-wechat-close></div>
       <div class="wechat-panel" role="dialog" aria-modal="true" aria-labelledby="wechat-title" tabindex="-1">
         <button class="wechat-close" data-wechat-close type="button" aria-label="Close WeChat QR code">Close</button>
-        <img data-wechat-image src="assets/wechat_en.jpg" alt="WeChat QR code">
+        <img data-wechat-image src="assets/wechat_en.jpg" width="1224" height="1605" alt="WeChat QR code" loading="lazy" decoding="async">
         <div>
           <h2 id="wechat-title">WeChat</h2>
           <p data-wechat-copy>Scan the QR code to add me on WeChat.</p>
@@ -443,6 +580,7 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20261003-editorial"></script>
+    <script src="immersive.js?v=20261003-editorial"></script>
   </body>
 </html>

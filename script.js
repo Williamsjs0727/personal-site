@@ -7,17 +7,18 @@ const sections = navLinks
 
 const links = {
   en: {
-    cv: "http://drive.google.com/file/d/1mGLtWM1eYTXxHXKDGP8l3LyrxBBRxj_r/view?usp=sharing",
+    cv: "https://drive.google.com/file/d/1mGLtWM1eYTXxHXKDGP8l3LyrxBBRxj_r/view?usp=sharing",
     "decision-prototype": "https://js.design/f/KM63Du?p=YE90lv-dKO",
     "decision-report": "https://drive.google.com/file/d/13JvHc2L1JbwjWKGa_m_7OHvv1nM-cMQg/view",
-    "lyft-ad-video": "http://youtu.be/08Axhp8f7EI",
+    "lyft-ad-video": "https://youtu.be/08Axhp8f7EI",
     "lyft-journey-map": "https://www.canva.com/design/DAFvXjdhEIA/bAh9f8T-dHQv7OnIJyS4Yw/edit",
     "job-search-prototype": "https://modao.cc/app/Hxh6IPpr7ycgmLNkCPrV5#screen=sl04y25ll64kaxm",
-    "domie-design-video": "http://youtu.be/VNLKsv6CtYw",
-    "domie-concept-file": "http://drive.google.com/file/d/17MsGqdXW5mxqgbwuuo-goXDBD6uM9VZS/view?usp=sharing",
-    "bag-design-slides": "http://drive.google.com/file/d/1Saa_u7VQsaYw5zP0g3mKeni31NZ5G4_Z/view?usp=sharing",
-    "bag-redesign-slides": "http://drive.google.com/file/d/1LJMdZwtt1IKzxzYCn52uuAWbZQTI84Nr/view?usp=sharing",
-    "domie-cad-video": "http://youtu.be/rFOj1OjNtnU",
+    "domie-design-video": "https://youtu.be/VNLKsv6CtYw",
+    "domie-concept-file": "https://drive.google.com/file/d/17MsGqdXW5mxqgbwuuo-goXDBD6uM9VZS/view?usp=sharing",
+    "bag-design-slides": "https://drive.google.com/file/d/1Saa_u7VQsaYw5zP0g3mKeni31NZ5G4_Z/view?usp=sharing",
+    "bag-redesign-slides": "https://drive.google.com/file/d/1LJMdZwtt1IKzxzYCn52uuAWbZQTI84Nr/view?usp=sharing",
+    "domie-cad-video": "https://youtu.be/rFOj1OjNtnU",
+    "nyc-github": "https://github.com/Williamsjs0727/Group1-Final-Project",
     "ucl-social": "https://www.youtube.com/watch?v=1A1gI9liGfA",
     instagram: "https://www.instagram.com/s_jingshan/",
   },
@@ -33,6 +34,7 @@ const links = {
     "bag-design-slides": "https://1drv.ms/b/s!AmF6I0bzmNnSgyYWgcYYV-o5UE_H?e=cWfrv5",
     "bag-redesign-slides": "https://1drv.ms/b/s!AmF6I0bzmNnSgyc-lPp2zoq9kowq?e=d6Hclx",
     "domie-cad-video": "https://1drv.ms/v/s!AmF6I0bzmNnSgyoTkIykbBC_o1Cu?e=Fv1Q3I",
+    "nyc-github": "https://github.com/Williamsjs0727/Group1-Final-Project",
     "ucl-social": "https://jingshanshi.framer.website/main---cn#writings-10",
     instagram: "https://www.instagram.com/s_jingshan/",
   },
@@ -54,7 +56,7 @@ const copy = {
     nav: ["Introduction", "Education", "Experience", "Projects", "UCL", "Photography", "Contact"],
     hero: {
       eyebrow: "Product Management / Operations / Brand Strategy",
-      title: 'Jingshan<br><span>"William"</span> Shi',
+      title: 'Jingshan<br><span>William Shi</span>',
       lede:
         "A Columbia MSc graduate and UCL alum building across telecom, product, brand, operations, analytics, and international business.",
       actions: ["View experience", "Download CV"],
@@ -110,57 +112,57 @@ const copy = {
     projects: {
       kicker: "Projects",
       heading: "Selected work across product, design, and analytics.",
-      groups: ["Product Management", "Design", "Data Analytics"],
-      items: [
-        {
+      groups: ["Featured Cases", "Project Archive"],
+      items: {
+        "decision-making": {
           type: "App Prototype",
           title: "Decision Making App Prototype",
-          body: "An inventive app that streamlines decision-making for customized dining and cinematic recommendations.",
-          links: ["View prototype", "View report"],
+          body: "Led an AI-powered recommendation app during undergraduate study to streamline dining and movie decisions through customized recommendations.",
+          links: { "decision-prototype": "View prototype", "decision-report": "View report" },
         },
-        {
+        "lyft-ar": {
           type: "AR Product Concept",
           title: "Lyft AR Pickup Prototype",
           body: "AR visual cues help passengers and drivers accurately identify each other's location.",
-          links: ["View advertising video"],
+          links: { "lyft-ad-video": "View advertising video" },
         },
-        {
+        "lyft-journey": {
           type: "Journey Mapping",
           title: "Lyft Customer Journey Map",
           body: "A full user-experience map used to identify improvements across the Lyft journey.",
-          links: ["View customer journey map"],
+          links: { "lyft-journey-map": "View journey map" },
         },
-        {
+        "job-search": {
           type: "Marketplace Prototype",
           title: "Job-Search App Prototype",
           body: "A job-search platform for UK students to find opportunities at tech and business startups.",
-          links: ["View prototype"],
+          links: { "job-search-prototype": "View prototype" },
         },
-        {
-          type: "Spatial Product",
+        domie: {
+          type: "Spatial Product + CAD",
           title: "Domie: Repurposing NYC Rooftops",
-          body: "Foldable rooftop igloos that adapt to weather on demand and extend rooftop use to all four seasons.",
-          links: ["View design video", "View concept development file"],
+          body: "A foldable rooftop-igloo system that adapts to weather on demand, extends NYC rooftop use across all four seasons, and includes a CAD prototype for extreme-weather operation.",
+          links: { "domie-design-video": "View design video", "domie-concept-file": "View concept file", "domie-cad-video": "View CAD prototype" },
         },
-        {
+        "ideal-bag": {
           type: "Product Design",
           title: "An Ideal Bag",
           body: "Customer analysis translated into functional and emotional design requirements for an ideal bag.",
-          links: ["View design slides", "View re-design slides"],
+          links: { "bag-design-slides": "View design slides", "bag-redesign-slides": "View redesign" },
         },
-        {
+        "domie-cad": {
           type: "CAD Prototype",
           title: "Domie CAD Prototype",
           body: "A prototype showing how Domie can operate under extreme weather conditions.",
-          links: ["View prototype video"],
+          links: { "domie-cad-video": "View CAD prototype" },
         },
-        {
+        "nyc-apartment": {
           type: "Urban Data",
           title: "NYC Apartment Search",
-          body: "A data-driven analysis of NYC apartment data, 311 complaints, and urban forestry data to support better apartment rental decisions.",
-          links: ["View project code on GitHub"],
+          body: "Combined NYC apartment data, 311 complaints, and urban forestry data to support better rental decisions, with project code available on GitHub.",
+          links: { "nyc-github": "View project code" },
         },
-      ],
+      },
     },
     experience: {
       kicker: "Professional Experiences",
@@ -168,9 +170,9 @@ const copy = {
         "Product sense shaped through telecom, brand, marketplace, mobility, and early venture work.",
       lensLabel: "Experience composition",
       lens: [
-        { title: "Full-time", body: "CMI graduate trainee rotation" },
-        { title: "Internships", body: "Brand, product operations, mobility" },
-        { title: "Venture", body: "High school entrepreneurship" },
+        { value: "20%", title: "Engagement lift", body: "Poppy · product operations" },
+        { value: "6M+", title: "Users reached", body: "DiDi · mobility product" },
+        { value: "GSD · MVNO", title: "Telecom scope", body: "CMI · global business exposure" },
       ],
       items: [
         { year: "2025", date: "Aug - Present", company: "China Mobile International", role: "Graduate Trainee · Full-time job", link: "View rotation details" },
@@ -181,6 +183,7 @@ const copy = {
       ],
     },
     ucl: {
+      chapter: "05 — UCL / London",
       kicker: "UCL SOM Official Social Media Project",
       heading: "Content, community, and editorial judgment.",
       body: "A separate creative thread in the portfolio, connected to audience-building, content planning, and the discipline of making information feel considered.",
@@ -191,6 +194,10 @@ const copy = {
       heading: "Urban light and coastal silence.",
       body: "Fujifilm frames of city streets, coastlines, and quiet travel details.",
       meta: ["18 selected frames", "Fujifilm / Cities / Travel"],
+      filters: ["All", "Cities", "Coast", "Details"],
+      filterLabel: "Filter photographs",
+      status: (count) => count === 18 ? "Showing all 18 photographs" : `Showing ${count} photographs`,
+      lightbox: { close: "Close", closeLabel: "Close photograph", previous: "Previous", previousLabel: "Previous photograph", next: "Next", nextLabel: "Next photograph", open: "Open photograph" },
     },
     contact: {
       kicker: "Get in touch",
@@ -200,6 +207,9 @@ const copy = {
         instagram: "Instagram",
         wechat: "WeChat",
       },
+      primaryDetails: ["js6363@columbia.edu", "Professional profile", "Scan to connect"],
+      secondaryLabel: "More contact details",
+      phoneLabels: { "hong-kong": "Hong Kong", mainland: "Mainland China" },
       wechat: {
         title: "WeChat",
         copy: "Scan the QR code to add me on WeChat.",
@@ -285,66 +295,66 @@ const copy = {
     projects: {
       kicker: "项目",
       heading: "精选作品：产品、设计与数据分析。",
-      groups: ["产品管理", "设计", "数据分析"],
-      items: [
-        {
+      groups: ["精选案例", "项目档案"],
+      items: {
+        "decision-making": {
           type: "应用原型",
           title: "决策应用原型",
-          body: "一款帮助用户在餐厅与电影选择中做出个性化决策的创新应用。",
-          links: ["查看原型", "查看报告"],
+          body: "本科期间主导一款 AI 推荐应用，通过个性化推荐简化餐厅与电影选择。",
+          links: { "decision-prototype": "查看原型", "decision-report": "查看报告" },
         },
-        {
+        "lyft-ar": {
           type: "AR 产品概念",
           title: "Lyft AR 接驾原型",
           body: "通过 AR 视觉提示，帮助乘客与司机更准确地识别彼此位置。",
-          links: ["查看广告视频"],
+          links: { "lyft-ad-video": "查看广告视频" },
         },
-        {
+        "lyft-journey": {
           type: "用户旅程地图",
           title: "Lyft 用户旅程地图",
           body: "完整梳理 Lyft 用户体验流程，用于识别体验优化机会。",
-          links: ["查看用户旅程地图"],
+          links: { "lyft-journey-map": "查看旅程地图" },
         },
-        {
+        "job-search": {
           type: "平台原型",
           title: "求职应用原型",
           body: "面向英国学生的求职平台，帮助他们发现科技与商业初创企业机会。",
-          links: ["查看原型"],
+          links: { "job-search-prototype": "查看原型" },
         },
-        {
-          type: "空间产品",
+        domie: {
+          type: "空间产品 + CAD",
           title: "Domie：纽约屋顶再利用",
-          body: "可折叠屋顶圆顶小屋，能根据天气快速展开或收起，将屋顶使用从单一季节扩展到全年。",
-          links: ["查看设计视频", "查看概念开发文件"],
+          body: "一套可按天气快速展开或收起的折叠式屋顶圆顶系统，将纽约屋顶使用延伸至全年，并通过 CAD 原型展示极端天气下的运行方式。",
+          links: { "domie-design-video": "查看设计视频", "domie-concept-file": "查看概念文件", "domie-cad-video": "查看 CAD 原型" },
         },
-        {
+        "ideal-bag": {
           type: "产品设计",
           title: "理想包袋设计",
           body: "基于用户分析，将功能需求与情感连接转化为包袋设计方案。",
-          links: ["查看设计幻灯片", "查看重新设计幻灯片"],
+          links: { "bag-design-slides": "查看设计幻灯片", "bag-redesign-slides": "查看重新设计" },
         },
-        {
+        "domie-cad": {
           type: "CAD 原型",
           title: "Domie CAD 原型",
           body: "展示 Domie 如何在极端天气条件下运行的原型方案。",
-          links: ["查看原型视频"],
+          links: { "domie-cad-video": "查看 CAD 原型" },
         },
-        {
+        "nyc-apartment": {
           type: "城市数据",
           title: "纽约公寓搜索",
-          body: "基于纽约公寓数据、311 投诉与城市绿化数据的分析，支持更理性的租房决策。",
-          links: ["在 GitHub 查看项目代码"],
+          body: "结合纽约公寓数据、311 投诉与城市绿化数据，为更理性的租房决策提供支持，并在 GitHub 提供项目代码。",
+          links: { "nyc-github": "查看项目代码" },
         },
-      ],
+      },
     },
     experience: {
       kicker: "工作经历",
       heading: "产品判断力在电信、品牌、平台、出行与早期创业中持续形成。",
       lensLabel: "经历构成",
       lens: [
-        { title: "全职", body: "中国移动国际管培生轮岗" },
-        { title: "实习", body: "品牌、产品运营与出行平台" },
-        { title: "创业", body: "高中阶段创业经历" },
+        { value: "20%", title: "参与度提升", body: "Poppy · 产品运营" },
+        { value: "6M+", title: "用户覆盖", body: "滴滴 · 出行产品" },
+        { value: "GSD · MVNO", title: "电信业务范围", body: "CMI · 全球业务经验" },
       ],
       items: [
         { year: "2025", date: "8月 - 至今", company: "中国移动国际", role: "管培生 · 全职工作", link: "查看轮岗详情" },
@@ -355,6 +365,7 @@ const copy = {
       ],
     },
     ucl: {
+      chapter: "05 — UCL / 伦敦",
       kicker: "UCL 管理学院官方社交媒体项目",
       heading: "内容、社区与编辑判断。",
       body: "作品集中另一条创意线索，连接受众增长、内容规划，以及让信息表达更克制、更清晰的能力。",
@@ -365,6 +376,10 @@ const copy = {
       heading: "城市光线与海岸静默。",
       body: "Fujifilm 镜头下的城市、海岸与旅途细节。",
       meta: ["18 张精选作品", "Fujifilm / 城市 / 旅行"],
+      filters: ["全部", "城市", "海岸", "细节"],
+      filterLabel: "筛选摄影作品",
+      status: (count) => count === 18 ? "正在显示全部 18 张作品" : `正在显示 ${count} 张作品`,
+      lightbox: { close: "关闭", closeLabel: "关闭照片", previous: "上一张", previousLabel: "查看上一张照片", next: "下一张", nextLabel: "查看下一张照片", open: "打开照片" },
     },
     contact: {
       kicker: "联系",
@@ -374,6 +389,9 @@ const copy = {
         instagram: "Instagram",
         wechat: "微信",
       },
+      primaryDetails: ["js6363@columbia.edu", "查看职业主页", "扫码添加微信"],
+      secondaryLabel: "更多联系方式",
+      phoneLabels: { "hong-kong": "香港", mainland: "中国内地" },
       wechat: {
         title: "微信",
         copy: "扫描二维码添加我的微信。",
@@ -442,11 +460,6 @@ const applyLanguage = (language) => {
     });
   }
 
-  const heroMedia = document.querySelector(".hero-media");
-  const heroImage = document.querySelector(".hero-media img");
-  if (heroMedia) heroMedia.setAttribute("aria-label", content.labels.portrait);
-  if (heroImage) heroImage.setAttribute("alt", content.labels.portraitAlt);
-
   const languageSwitch = document.querySelector(".language-switch");
   if (languageSwitch) languageSwitch.setAttribute("aria-label", lang === "zh" ? "语言" : "Language");
   const headerContact = document.querySelector(".header-contact");
@@ -463,6 +476,7 @@ const applyLanguage = (language) => {
     link.textContent = content.hero.actions[index];
   });
   setText(".hero-note", content.hero.note);
+  setText(".photo-prologue-bridge", lang === "zh" ? "从观察到系统——让摄影、产品与运营共享同一种视觉语言。" : "From observation to systems — one visual language across photographs, products, and operations.");
 
   setText(".intro > .section-kicker", content.intro.kicker);
   setText(".intro h2", content.intro.quote);
@@ -492,17 +506,21 @@ const applyLanguage = (language) => {
 
   setText(".projects-section .section-kicker", content.projects.kicker);
   setText(".projects-section .section-heading h2", content.projects.heading);
-  document.querySelectorAll(".group-title").forEach((title, index) => {
+  document.querySelectorAll("#projects .group-title").forEach((title, index) => {
     title.textContent = content.projects.groups[index];
   });
-  document.querySelectorAll("#projects .project").forEach((project, index) => {
-    const item = content.projects.items[index];
+  document.querySelectorAll("#projects [data-project-key]").forEach((project) => {
+    const item = content.projects.items[project.dataset.projectKey];
     if (!item) return;
-    project.querySelector(".project-type").textContent = item.type;
-    project.querySelector("h3").textContent = item.title;
-    project.querySelector(".project-copy > p:not(.project-type)").textContent = item.body;
-    project.querySelectorAll(".project-copy a").forEach((link, linkIndex) => {
-      link.textContent = item.links[linkIndex];
+    const projectType = project.querySelector(".project-type");
+    const projectTitle = project.querySelector("h3");
+    if (projectType) projectType.textContent = item.type;
+    if (projectTitle) projectTitle.textContent = item.title;
+    const body = project.querySelector(".project-copy > p:not(.project-type), :scope > div > p:not(.project-type)");
+    if (body) body.textContent = item.body;
+    project.querySelectorAll("a[data-link-key]").forEach((link) => {
+      const label = item.links[link.dataset.linkKey];
+      if (label) link.textContent = label;
     });
   });
 
@@ -512,6 +530,7 @@ const applyLanguage = (language) => {
   document.querySelectorAll(".experience-lens article").forEach((item, index) => {
     const lens = content.experience.lens[index];
     if (!lens) return;
+    item.querySelector("span").textContent = lens.value;
     item.querySelector("strong").textContent = lens.title;
     item.querySelector("small").textContent = lens.body;
   });
@@ -528,22 +547,56 @@ const applyLanguage = (language) => {
   });
 
   setText("#ucl .section-kicker", content.ucl.kicker);
+  setText("#ucl .ucl-chapter-mark", content.ucl.chapter);
   setText("#ucl h2", content.ucl.heading);
-  setText("#ucl .split-copy p", content.ucl.body);
+  setText("#ucl .ucl-description", content.ucl.body);
   setText("#ucl .button", content.ucl.button);
 
   setText("#photography .section-kicker", content.photography.kicker);
   setText("#photography h2", content.photography.heading);
-  setText("#photography .photo-heading p", content.photography.body);
+  setText("#photography .photo-description", content.photography.body);
   document.querySelectorAll("#photography .photo-meta span").forEach((item, index) => {
     item.textContent = content.photography.meta[index];
   });
+  const photoFilters = document.querySelector(".photo-filters");
+  if (photoFilters) photoFilters.setAttribute("aria-label", content.photography.filterLabel);
+  document.querySelectorAll("[data-photo-filter]").forEach((button, index) => {
+    button.textContent = content.photography.filters[index];
+  });
+  const visiblePhotos = document.querySelectorAll(".photo-item:not([hidden])").length;
+  setText("[data-photo-status]", content.photography.status(visiblePhotos));
+  document.querySelectorAll(".photo-open").forEach((button) => {
+    const alt = button.querySelector("img")?.alt || "";
+    button.setAttribute("aria-label", `${content.photography.lightbox.open}: ${alt}`);
+  });
+  const lightboxClose = document.querySelector("[data-lightbox-close]");
+  const lightboxPrevious = document.querySelector("[data-lightbox-previous]");
+  const lightboxNext = document.querySelector("[data-lightbox-next]");
+  if (lightboxClose) {
+    lightboxClose.textContent = content.photography.lightbox.close;
+    lightboxClose.setAttribute("aria-label", content.photography.lightbox.closeLabel);
+  }
+  if (lightboxPrevious) {
+    lightboxPrevious.textContent = content.photography.lightbox.previous;
+    lightboxPrevious.setAttribute("aria-label", content.photography.lightbox.previousLabel);
+  }
+  if (lightboxNext) {
+    lightboxNext.textContent = content.photography.lightbox.next;
+    lightboxNext.setAttribute("aria-label", content.photography.lightbox.nextLabel);
+  }
 
   setText("#contact .section-kicker", content.contact.kicker);
   setText("#contact h2", content.contact.heading);
   document.querySelectorAll("[data-contact-key]").forEach((element) => {
     const label = content.contact.links[element.dataset.contactKey];
     if (label) element.textContent = label;
+  });
+  document.querySelectorAll(".contact-primary strong").forEach((element, index) => {
+    element.textContent = content.contact.primaryDetails[index];
+  });
+  setText("[data-contact-secondary-label]", content.contact.secondaryLabel);
+  document.querySelectorAll("[data-phone-label]").forEach((element) => {
+    element.textContent = content.contact.phoneLabels[element.dataset.phoneLabel];
   });
 
   const wechatImage = document.querySelector("[data-wechat-image]");
@@ -635,6 +688,12 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && wechatModal && !wechatModal.hidden) {
     closeWechatModal();
   }
+});
+
+document.querySelectorAll('.highlights, .education-grid, .project-archive-list').forEach((group) => {
+  group.querySelectorAll('.reveal').forEach((item, index) => {
+    item.style.setProperty('--reveal-delay', `${Math.min(index, 3) * 65}ms`);
+  });
 });
 
 const revealObserver = new IntersectionObserver(
